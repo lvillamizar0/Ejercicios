@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+    float Area, gallinas, resultado;
+    cout<<"ingresa el Area de tu corral(en metros cuadrados):"<<endl;
+    cin>>Area;
+    cout<<"ingresa tu numero de gallinas:"<<endl;
+    cin>>gallinas;
+    
+    resultado= Area/gallinas;
+    cout<<"A cada gallina le corresponde "<<resultado;
+    cout<<" de metros cuadrados"<<endl;
+}
+
