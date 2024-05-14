@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+main()
+{
+    //variables de salida
+    int mayor=0, menor=0 ;
+    //variables de entrada
+    int lista[3];
+    for ( int i = 0 ; i<3 ; i++)
+    {
+        cin>>lista[i];
+        cout<<"\n";
+        if (lista[i]<0)
+        {
+            cout<<"No puedes ingresar numeros negativos"<<endl;
+            i--;
+        }
+    }
+    menor = lista[0];
+    //estimando el mayor
+    for (int j=0; j<3 ; j++)
+    {
+        if (lista[j] > mayor)
+        {
+            mayor = lista[j];
+        }
+    }
+    cout<<"El mayor es : "<< mayor<<endl;
+}
+    
